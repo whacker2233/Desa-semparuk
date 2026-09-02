@@ -1,0 +1,40 @@
+*{margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth;}
+body{font-family:"Segoe UI",Arial,sans-serif; background:#f4faf7; color:#26352c; line-height:1.7;}
+
+/* NAVBAR */
+nav{position:fixed; top:0; width:100%; z-index:1000; padding:15px 7%; display:flex; justify-content:space-between; align-items:center; background:rgba(4,67,42,.96); box-shadow:0 4px 15px rgba(0,0,0,.2);}
+.logo{color:white; font-size:21px; font-weight:bold;}
+nav ul{display:flex; gap:22px; list-style:none; flex-wrap:wrap;}
+nav a{color:white; text-decoration:none; font-weight:600;}
+nav a:hover{color:#9ff0bb;}
+
+/* HERO */
+.hero{min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; color:white; padding:100px 7% 50px; background:linear-gradient(rgba(0,50,30,.45), rgba(0,25,15,.78)), url("senja.jpg") center/cover no-repeat;}
+.hero-content{max-width:850px;}
+.hero h1{font-size:clamp(42px,7vw,72px); margin-bottom:18px; text-shadow:0 4px 15px rgba(0,0,0,.7);}
+.hero p{font-size:20px; margin-bottom:30px;}
+.btn{display:inline-block; padding:14px 30px; background:#2eaa67; color:white; border-radius:30px; text-decoration:none; font-weight:bold; transition:.3s;}
+.btn:hover{background:#197d48; transform:translateY(-3px);}
+
+/* SECTION */
+section{padding:90px 8%;}
+.judul{text-align:center; max-width:750px; margin:0 auto 45px;}
+.judul h2{font-size:32px; color:#04432a; margin-bottom:12px;}
+.judul p{font-size:17px; color:#4a6b58;}
+
+/* KONTEN */
+.grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:40px; align-items:center;}
+.kolom h3{font-size:24px; color:#04432a; margin-bottom:15px;}
+.kolom p{margin-bottom:12px; text-align:justify;}
+.gambar img{width:100%; border-radius:12px; box-shadow:0 5px 15px rgba(0,0,0,.12);}
+
+/* KARTU */
+.kartu-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:30px; margin-top:20px;}
+.kartu{background:white; border-radius:12px; overflow:hidden; box-shadow:0 5px 15px rgba(0,0,0,.08); transition:.3s;}
+.kartu:hover{transform:translateY(-8px);}
+.kartu img{width:100%; height:200px; object-fit:cover;}
+.kartu-teks{padding:20px;}
+.kartu-teks h4{color:#04432a; margin-bottom:8px; font-size:19px;}
+
+/* FOOTER */
+footer{background:#04432a; color:white; text-align:center; padding:30px 7%; margin-top:20px;}
